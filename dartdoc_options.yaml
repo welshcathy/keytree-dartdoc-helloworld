@@ -1,0 +1,32 @@
+
+dartdoc:
+  useCategories: true
+  # If there is no matching category defined in dartdoc_options.yaml, those declared categories in the source code will be invisible.
+  categories:
+    HomePage:
+       name: "Home Page Category"
+    AfterSales:
+      # name: AfterSales
+  showUndocumentedCategories: true
+  # categoryOrder: ["HomePage", "AfterSales"]
+  # examplePathPrefix: 'subdir/with/examples'
+  # This fails - looks like you can only have one path in there ...and can't be a folder
+  includeExternal: ['repos/repos.dart']
+
+
+
+  # linkTo:
+  # url: "https://my.dartdocumentationsite.org/dev/%v%"
+  # ignore:
+  #   - ambiguous-doc-reference
+  #   - unresolved-doc-reference
+  #   - broken-link
+  #   - unknown-file
+  # errors:
+  # warnings:
+  #   - tool-error
+  # # include: hello_world_library
+  # verboseWarnings: false
+  # showProgress: false
+  # quiet: true
+  # injectHtml: true

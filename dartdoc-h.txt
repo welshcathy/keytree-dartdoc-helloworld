@@ -1,0 +1,282 @@
+Generate HTML documentation for Dart libraries.
+
+    --[no-]allow-tools                            Execute user-defined tools to
+                                                  fill in @tool directives.
+    --ambiguous-reexport-scorer-min-confidence    Minimum scorer confidence to
+                                                  suppress warning on ambiguous
+                                                  reexport.
+                                                  (defaults to "0.1")
+    --[no-]auto-include-dependencies              Include all the used libraries
+                                                  into the docs, even the ones
+                                                  not in the current package or
+                                                  "include-external"
+    --category-order                              A list of categories (not
+                                                  package names) to place first
+                                                  when grouping symbols on
+                                                  dartdoc's sidebar. Unmentioned
+                                                  categories are sorted after
+                                                  these.
+    --example-path-prefix                         Prefix for @example paths.
+                                                  (defaults to the project root)
+    --exclude                                     Library names to ignore.
+    --exclude-packages                            Package names to ignore.
+    --include                                     Library names to generate docs
+                                                  for.
+    --include-external                            Additional (external) dart
+                                                  files to include; use
+                                                  "dir/fileName", as in
+                                                  lib/material.dart.
+    --[no-]include-source                         Show source code blocks.
+                                                  (defaults to on)
+    --inject-html                                 Allow the use of the
+                                                  {@inject-html} directive to
+                                                  inject raw HTML into dartdoc
+                                                  output.
+    --input                                       Path to source directory
+                                                  (defaults to
+                                                  "/Users/welshcathy/www/keytree
+                                                  /KCP/sandpit/hello_world")
+    --link-to-hosted                              Specify URLs for hosted pub
+                                                  packages
+                                                  (defaults to
+                                                  "pub.dartlang.org::https://pub
+                                                  .dev/documentation/%n%/%v%")
+    --link-to-sdks                                Specify URLs for SDKs.
+                                                  (defaults to
+                                                  "Dart::https://api.dart.dev/%b
+                                                  %/%v%",
+                                                  "Flutter::https://api.flutter.
+                                                  dev/flutter")
+    --[no-]link-to-remote                         Allow links to be generated
+                                                  for packages outside this one.
+                                                  (defaults to on)
+    --output                                      Path to output directory.
+                                                  (defaults to "doc/api")
+    --package-order                               A list of package names to
+                                                  place first when grouping
+                                                  libraries in packages.
+                                                  Unmentioned packages are
+                                                  sorted after these.
+    --sdk-docs                                    Generate ONLY the docs for the
+                                                  Dart SDK.
+    --sdk-dir                                     Path to the SDK directory.
+    --[no-]show-undocumented-categories           Label categories that aren't
+                                                  documented
+    --use-categories                              Display categories in the
+                                                  sidebar of packages
+                                                  (defaults to on)
+    --[no-]validate-links                         Runs the built-in link checker
+                                                  to display Dart context aware
+                                                  warnings for broken links
+                                                  (slow)
+                                                  (defaults to on)
+    --[no-]verbose-warnings                       Display extra debugging
+                                                  information and help with
+                                                  warnings.
+                                                  (defaults to on)
+    --enable-experiment                           Enable or disable listed
+                                                  experiments.
+                                                  [no-]constant-update-2018:
+                                                  Enhanced constant expressions
+                                                  (default: true)
+                                                  [no-]control-flow-collections:
+                                                  Control Flow Collections
+                                                  (default: true)
+                                                  [no-]extension-methods:
+                                                  Extension Methods (default:
+                                                  true)
+                                                  [no-]non-nullable: Non
+                                                  Nullable by default (default:
+                                                  false)
+                                                  [no-]nonfunction-type-aliases:
+                                                  Type aliases define a <type>,
+                                                  not just a <functionType>.
+                                                  (default: false)
+                                                  [no-]set-literals: Set
+                                                  Literals (default: true)
+                                                  [no-]spread-collections:
+                                                  Spread Collections (default:
+                                                  true)
+                                                  [no-]triple-shift:
+                                                  Triple-shift operator
+                                                  (default: false)
+                                                  [no-]variance: Sound variance.
+                                                  (default: false)
+    --[no-]allow-non-local-warnings               Show warnings from packages we
+                                                  are not documenting locally.
+    --allow-warnings-in-packages                  Package names to display
+                                                  warnings for (ignore all
+                                                  others if set).
+    --allow-errors-in-packages                    Package names to display
+                                                  errors for (ignore all others
+                                                  if set)
+    --ignore-warnings-in-packages                 Package names to ignore
+                                                  warnings for.  Takes priority
+                                                  over
+                                                  allow-warnings-in-packages
+    --ignore-errors-in-packages                   Package names to ignore errors
+                                                  for. Takes priority over
+                                                  allow-errors-in-packages
+    --errors                                      Additional warning names to
+                                                  force as errors.  Specify an
+                                                  empty list to force defaults
+                                                  (overriding
+                                                  dartdoc_options.yaml)
+                                                  Defaults:
+                                                  duplicate-file: Dartdoc is
+                                                  trying to write to a duplicate
+                                                  filename based on the names of
+                                                  Dart symbols.
+                                                  invalid-parameter: A parameter
+                                                  given to a dartdoc directive
+                                                  was invalid.
+                                                  tool-error: Unable to execute
+                                                  external tool.
+                                                  unresolved-export: An export
+                                                  refers to a URI that cannot be
+                                                  resolved.
+    --ignore                                      Additional warning names to
+                                                  ignore.  Specify an empty list
+                                                  to force defaults (overriding
+                                                  dartdoc_options.yaml).
+                                                  Defaults:
+                                                  missing-constant-constructor:
+                                                  Dartdoc can not show the value
+                                                  of a constant because its
+                                                  constructor could not be
+                                                  resolved.
+                                                  type-as-html: Use of <> in a
+                                                  comment for type parameters is
+                                                  being treated as HTML by
+                                                  markdown
+    --warnings                                    Additional warning names to
+                                                  show as warnings (instead of
+                                                  error or ignore, if not
+                                                  warning by default).
+                                                  Defaults:
+                                                  ambiguous-doc-reference: A
+                                                  comment reference could refer
+                                                  to two or more different
+                                                  objects
+                                                  ambiguous-reexport: A symbol
+                                                  is exported from private to
+                                                  public in more than one
+                                                  library and dartdoc can not
+                                                  determine which one is
+                                                  canonical
+                                                  broken-link: Dartdoc generated
+                                                  a link to a non-existent file
+                                                  category-order-gives-missing-p
+                                                  ackage-name: The
+                                                  category-order flag on the
+                                                  command line was given the
+                                                  name of a nonexistent package
+                                                  deprecated: A dartdoc
+                                                  directive has a deprecated
+                                                  format.
+                                                  ignored-canonical-for: A
+                                                  @canonicalFor tag refers to a
+                                                  library which this symbol can
+                                                  not be canonical for
+                                                  missing-from-search-index: A
+                                                  file generated by dartdoc is
+                                                  not present in the generated
+                                                  index.json
+                                                  no-canonical-found: A symbol
+                                                  is part of the public
+                                                  interface for this package,
+                                                  but no library documented with
+                                                  this package documents it so
+                                                  dartdoc can not link to it
+                                                  no-library-level-docs: There
+                                                  are no library level docs for
+                                                  this library
+                                                  not-implemented: The code
+                                                  makes use of a feature that is
+                                                  not yet implemented in dartdoc
+                                                  orphaned-file: Dartdoc
+                                                  generated files that are
+                                                  unreachable from the index
+                                                  reexported-private-api-across-
+                                                  packages: One or more
+                                                  libraries reexports private
+                                                  API members from outside its
+                                                  own package
+                                                  unknown-file: A leftover file
+                                                  exists in the tree that
+                                                  dartdoc did not write in this
+                                                  pass
+                                                  unknown-macro: A comment
+                                                  reference contains an unknown
+                                                  macro
+                                                  unresolved-doc-reference: A
+                                                  comment reference could not be
+                                                  found in parameters, enclosing
+                                                  class, enclosing library, or
+                                                  at the top level of any
+                                                  documented library with the
+                                                  package
+    --link-to-source-excludes                     A list of directories to
+                                                  exclude from linking to a
+                                                  source code repository.
+    --link-to-source-revision                     Revision number to insert into
+                                                  the URI.
+    --link-to-source-root                         Path to a local directory that
+                                                  is the root of the repository
+                                                  we link to.  All source code
+                                                  files under this directory
+                                                  will be linked.
+    --link-to-source-uri-template                 Substitute into this template
+                                                  to generate a uri for an
+                                                  element's source code.
+                                                  Dartdoc dynamically
+                                                  substitutes the following
+                                                  fields into the template:
+                                                  %f%:  Relative path of file to
+                                                  the repository root
+                                                  %r%:  Revision number
+                                                  %l%:  Line number
+    --[no-]async-stack-traces                     Display coordinated
+                                                  asynchronous stack traces
+                                                  (slow)
+    --[no-]generate-docs                          Generate docs into the output
+                                                  directory (or only display
+                                                  warnings if false).
+                                                  (defaults to on)
+-h, --help                                        Show command help.
+    --version                                     Display the version for
+                                                  dartdoc.
+    --[no-]json                                   Prints out progress JSON maps.
+                                                  One entry per line.
+    --[no-]show-progress                          Display progress indications
+                                                  to console stdout.
+                                                  (defaults to on)
+-q, --[no-]quiet                                  Only show warnings and errors;
+                                                  silence all other output.
+    --footer                                      Paths to files with content to
+                                                  add to page footers, but
+                                                  possibly outside of dedicated
+                                                  footer elements for the
+                                                  generator (e.g. outside of
+                                                  <footer> for an HTML
+                                                  generator). To add text
+                                                  content to dedicated footer
+                                                  elements, use --footer-text
+                                                  instead.
+    --footer-text                                 Paths to files with content to
+                                                  add to page footers (next to
+                                                  the package name and version).
+    --header                                      Paths to files with content to
+                                                  add to page headers.
+    --pretty-index-json                           Generates `index.json` with
+                                                  indentation and newlines. The
+                                                  file is larger, but it's also
+                                                  easier to diff.
+    --favicon                                     A path to a favicon for the
+                                                  generated docs.
+    --rel-canonical-prefix                        If provided, add a
+                                                  rel="canonical" prefixed with
+                                                  provided value. Consider using
+                                                  if building many versions of
+                                                  the docs for public SEO; learn
+                                                  more at https://goo.gl/gktN6F.
