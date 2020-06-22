@@ -1,16 +1,21 @@
 # hello_world
 
-A new Flutter project.
+A sandpit to explore what can be done with dartdoc 
 
-## Getting Started
+# Getting Started
+run flutter pub get in 
+- .
+- ./repos/aftersales
+- ./repos/news
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+# Files
+## /dartdoc-h.txt
+dartdoc help downloaded for easier reading
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## dartdoc_options.yaml
+standard dartdoc options file 
+looking to NOT set parameter values in here where possible and instead set them in the 
+script file that calls dartdoc
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
