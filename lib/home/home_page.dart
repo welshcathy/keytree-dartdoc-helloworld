@@ -1,10 +1,10 @@
-/// {@category HomePage}
+/// {@category HomePageCat}
 import 'package:flutter/material.dart';
 import 'package:hello_world/home/home_details.dart';
 import 'package:aftersales/main.dart';
 import 'package:news/main.dart';
 
-/// {@category HomePage}
+/// {@category HomePageCat}
 /// HomePage class blah blah blah
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);

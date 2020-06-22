@@ -44,15 +44,15 @@ PARAMS+=" --exclude \"${DART_PACKAGES}\""
 # LIBRARIES+=",aftersales"
 # PARAMS+=" --include \"${LIBRARIES}\""
 
-# Make sure this is running from project root
-if [ $0 = "run-dartdoc.sh" ]; then
-  cd ..
-elif [ $0 != "tools/run-dartdoc.sh" ]; then
-  echo "Please run this from your project root folder"
-  exit 0;
-fi
+# # Make sure this is running from project root
+# if [ $0 = "run-dartdoc.sh" ]; then
+#   cd ..
+# elif [ $0 != "tools/run-dartdoc.sh" ]; then
+#   echo "Please run this from your project root folder"
+#   exit 0;
+# fi
 
-cd doc; rm -r api; cd ..;
+# cd doc; rm -r api; cd ..;
 
 echo "--------------------------------------------------------------------------------"
 echo "PARAMS: $PARAMS"

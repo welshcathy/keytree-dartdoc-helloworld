@@ -2,16 +2,16 @@
 dartdoc:
   useCategories: true
   # If there is no matching category defined in dartdoc_options.yaml, those declared categories in the source code will be invisible.
-  categories:
-    HomePageCat:
-       name: "Home Page Category"
-    AfterSalesCat:
-      name: "After Sales Category"
+  # categories:
+  #   HomePageCat:
+  #      name: "Home Page Category"
+  #   AfterSalesCat:
+  #     name: "After Sales Category"
   showUndocumentedCategories: true
   # categoryOrder: ["HomePage", "AfterSales"]
   # examplePathPrefix: 'subdir/with/examples'
   # includeExternal: ['repos/repos.dart']
-  includeExternal: ['repos/news.dart','repos/aftersales.dart']
+  # includeExternal: ['repos/news.dart','repos/aftersales.dart']
 
 
 

@@ -1,7 +1,8 @@
-/// {@category AfterSales}
+/// {@category AfterSalesCat}
 import 'package:aftersales/details/aftersales_details.dart';
 import 'package:flutter/material.dart';
 
+/// {@category AfterSalesCat}
 /// AfterSales class blah blah blah
 class AfterSales extends StatelessWidget {
   /// AfterSales.printMethod() blah blah blah

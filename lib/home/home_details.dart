@@ -1,7 +1,7 @@
-/// {@category HomePage}
+/// {@category HomePageCat}
 import 'package:flutter/material.dart';
 
-/// {@category HomePage}
+/// {@category HomePageCat}
 /// HomeDetails blah blah blah
 class HomeDetails extends StatelessWidget {
   /// HomeDetails.printMethod() blah blah blah

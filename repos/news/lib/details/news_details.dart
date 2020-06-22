@@ -1,4 +1,4 @@
-/// {@category AfterSales}
+/// {@category AfterSalesCat}
 import 'package:flutter/material.dart';
 
 /// NewsDetails class blah blah blah

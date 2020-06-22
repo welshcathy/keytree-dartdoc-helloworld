@@ -1,6 +1,6 @@
-/// {@category AfterSales}
+/// {@category AfterSalesCatCat}
 /// library aftersales blah blah blah
-// library aftersales;
+library aftersales;
 
 // https://github.com/dart-lang/dartdoc/issues/2154
 // dartdoc will only parse files exported as the library's public interface

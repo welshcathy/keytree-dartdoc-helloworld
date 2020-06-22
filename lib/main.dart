@@ -1,15 +1,15 @@
-/// {@category HomePage}
+/// {@category HomePageCat}
 import 'package:flutter/material.dart';
 
 import 'home/home_page.dart';
 
-/// {@category HomePage}
+/// {@category HomePageCat}
 /// main blah blah blah
 void main() {
   runApp(MyApp());
 }
 
-/// {@category HomePage}
+/// {@category HomePageCat}
 /// my app class blah blah blah
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
